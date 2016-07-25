@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0-prerelease-20160726",
+  "dependencies": {
+  },
+  "buildOptions": {
+    "allowUnsafe": true,
+    "compile": {
+      "excludeFiles": [
+        "Properties/AssemblyInfo.cs"
+      ]
+    }
+  },
+  "frameworks": {
+    "net40": {
+      "dependencies": {
+        "Microsoft.Bcl": "1.1.10",
+        "Microsoft.Bcl.Async": "1.0.168"
+      }
+    },
+    "net45": {
+      "frameworkAssemblies": {
+        "System.IO.Compression": "4.0.0.0"
+      }
+    },
+    "net46": {
+      "frameworkAssemblies": {
+        "System.IO.Compression": "4.0.0.0"
+      },
+      "define": [ "PLAT_SAFE_CONTINUATIONS" ]
+    },
+    "netstandard1.6": {
+      "buildOptions": {
+        "define": [ "PLAT_SAFE_CONTINUATIONS", "CORE_CLR" ]
+      },
+      "dependencies": {
+        "NETStandard.Library": "1.6.0",
+        "System.Collections.NonGeneric": "4.0.1",
+        "System.IO.FileSystem": "4.0.1",
+        "System.Net.NameResolution": "4.0.0",
+        "System.Net.Security": "4.0.0",
+        "System.Net.Sockets": "4.1.0",
+        "System.Reflection.Emit": "4.0.1",
+        "System.Reflection.Emit.Lightweight": "4.0.1",
+        "System.Reflection.TypeExtensions": "4.1.0",
+        "System.Security.Cryptography.Algorithms": "4.2.0",
+        "System.Security.Cryptography.X509Certificates": "4.1.0",
+        "System.Threading.Thread": "4.0.0",
+        "System.Threading.ThreadPool": "4.0.10",
+        "System.Threading.Timer": "4.0.1"
+      }
+    }
+  }
+}

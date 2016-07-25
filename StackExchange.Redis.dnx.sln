@@ -1,20 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "BasicTest_dnxcore50", "BasicTest_dnxcore50\BasicTest_dnxcore50.xproj", "{9D83BABA-A92E-495F-BF63-DEB4F6B09355}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "StackExchange.Redis", "StackExchange.Redis\StackExchange.Redis.xproj", "{EF84877F-59BE-41BE-9013-E765AF0BB72E}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "StackExchange.Redis.StrongName", "StackExchange.Redis.StrongName\StackExchange.Redis.StrongName.xproj", "{46754D2A-AC16-4686-B113-3DB08ACF4269}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "StackExchange.Redis.Tests", "StackExchange.Redis.Tests\StackExchange.Redis.Tests.xproj", "{3B8BD8F1-8BFC-4D8C-B4DA-25FFAF3D1DBE}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3AD17044-6BFF-4750-9AC2-2CA466375F2A}"
 	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
 		NuGet.Config = NuGet.Config
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{910A96CF-0D3B-48BC-A7CF-2F41D294EFAB}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Pomelo.Redis", "src\Pomelo.Redis\Pomelo.Redis.xproj", "{F091CF78-4F6F-424E-AC1F-F6F75A730C97}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Pomelo.Redis.StrongName", "src\Pomelo.Redis.StrongName\Pomelo.Redis.StrongName.xproj", "{A4EC4757-833A-436E-A68B-0855C3EB6845}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,24 +21,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9D83BABA-A92E-495F-BF63-DEB4F6B09355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9D83BABA-A92E-495F-BF63-DEB4F6B09355}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9D83BABA-A92E-495F-BF63-DEB4F6B09355}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9D83BABA-A92E-495F-BF63-DEB4F6B09355}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EF84877F-59BE-41BE-9013-E765AF0BB72E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF84877F-59BE-41BE-9013-E765AF0BB72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF84877F-59BE-41BE-9013-E765AF0BB72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF84877F-59BE-41BE-9013-E765AF0BB72E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{46754D2A-AC16-4686-B113-3DB08ACF4269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46754D2A-AC16-4686-B113-3DB08ACF4269}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46754D2A-AC16-4686-B113-3DB08ACF4269}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46754D2A-AC16-4686-B113-3DB08ACF4269}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B8BD8F1-8BFC-4D8C-B4DA-25FFAF3D1DBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B8BD8F1-8BFC-4D8C-B4DA-25FFAF3D1DBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B8BD8F1-8BFC-4D8C-B4DA-25FFAF3D1DBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B8BD8F1-8BFC-4D8C-B4DA-25FFAF3D1DBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F091CF78-4F6F-424E-AC1F-F6F75A730C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F091CF78-4F6F-424E-AC1F-F6F75A730C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F091CF78-4F6F-424E-AC1F-F6F75A730C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F091CF78-4F6F-424E-AC1F-F6F75A730C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4EC4757-833A-436E-A68B-0855C3EB6845}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4EC4757-833A-436E-A68B-0855C3EB6845}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4EC4757-833A-436E-A68B-0855C3EB6845}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4EC4757-833A-436E-A68B-0855C3EB6845}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F091CF78-4F6F-424E-AC1F-F6F75A730C97} = {910A96CF-0D3B-48BC-A7CF-2F41D294EFAB}
+		{A4EC4757-833A-436E-A68B-0855C3EB6845} = {910A96CF-0D3B-48BC-A7CF-2F41D294EFAB}
 	EndGlobalSection
 EndGlobal
