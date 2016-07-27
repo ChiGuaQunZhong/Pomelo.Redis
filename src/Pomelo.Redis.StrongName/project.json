@@ -1,7 +1,20 @@
 {
-  "version": "1.0.0-prerelease-20160726",
+  "version": "1.0.0-*",
   "dependencies": {
   },
+
+  "packOptions": {
+    "authors": [ "Amamiya Yuuko" ],
+    "description": "Redis",
+    "projectUrl": "https://github.com/PomeloFoundation/Pomelo.Redis",
+    "iconUrl": "http://www.1234.sh/assets/Shared/pomelofoundation.png",
+    "licenseUrl": "https://github.com/PomeloFoundation/Pomelo.Redis/blob/master/LICENSE",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/pomelofoundation/pomelo.redis"
+    }
+  },
+
   "buildOptions": {
     "allowUnsafe": true,
     "define": [ "STRONG_NAME" ],
